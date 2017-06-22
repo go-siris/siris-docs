@@ -1,0 +1,11 @@
+- id: global.copyright
+  translation: "SIRIS ist eine OpenSource initiative für High-Performance Golang APIs mit HTTP/2"
+
+- id: header.button.language
+  translation: "Spache"
+
+- id: footer.button.prev
+  translation: "Zurück"
+
+- id: footer.button.next
+  translation: "Weiter"
