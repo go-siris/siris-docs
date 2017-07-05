@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SIRIS Docs</title>
+    <link>https://www.go-siris.com/zh-cn/</link>
+    <description>Recent content on SIRIS Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Released under the BSD-3-Clause license</copyright>
+    <lastBuildDate>Tue, 04 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.go-siris.com/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SIRIS Docs</title>
+      <link>https://www.go-siris.com/zh-cn/</link>
+      <pubDate>Tue, 04 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.go-siris.com/zh-cn/</guid>
+      <description> Beautiful documentation Simplified Chinese </description>
+    </item>
+    
+    <item>
+      <title>入门</title>
+      <link>https://www.go-siris.com/zh-cn/%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
+      
+      <guid>https://www.go-siris.com/zh-cn/%E5%85%A5%E9%97%A8/</guid>
+      <description> Beautiful documentation </description>
+    </item>
+    
+    <item>
+      <title>路线图</title>
+      <link>https://www.go-siris.com/zh-cn/%E8%B7%AF%E7%BA%BF%E5%9B%BE/</link>
+      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
+      
+      <guid>https://www.go-siris.com/zh-cn/%E8%B7%AF%E7%BA%BF%E5%9B%BE/</guid>
+      <description> Beautiful documentation </description>
+    </item>
+    
+    <item>
+      <title>执照</title>
+      <link>https://www.go-siris.com/zh-cn/%E6%89%A7%E7%85%A7/</link>
+      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
+      
+      <guid>https://www.go-siris.com/zh-cn/%E6%89%A7%E7%85%A7/</guid>
+      <description> Beautiful documentation </description>
+    </item>
+    
+  </channel>
+</rss>

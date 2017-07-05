@@ -20,14 +20,29 @@
     <div class="wrapper">
       {{ if (eq (trim .Site.Params.provider " " | lower) "github") | and (isset .Site.Params "repo_url") }}
         <ul class="repo">
-          <li class="repo-download">
-            <a href="{{ .Site.Params.repo_url }}/archive/master.zip" target="_blank" title="Download" data-action="download">
-              <i class="icon icon-download"></i> Download
-            </a>
-          </li>
           <li class="repo-stars">
             <a href="{{ .Site.Params.repo_url }}/stargazers" target="_blank" title="Stargazers" data-action="star">
-              <i class="icon icon-star"></i> Stars
+              <i class="fa fa-star"></i> Stars
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+          <li class="repo-forks">
+            <a href="{{ .Site.Params.repo_url }}/network/members" target="_blank" title="Forks" data-action="code-fork">
+              <i class="fa fa-code-fork"></i> Forks
+              <span class="count">&ndash;</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="repo">
+          <!--<li class="repo-download">
+            <a href="{{ .Site.Params.repo_url }}/archive/master.zip" target="_blank" title="Download" data-action="download">
+              <i class="fa fa-download"></i> Download
+            </a>
+          </li>
+          -->
+          <li class="repo-issues">
+            <a href="{{ .Site.Params.repo_url }}/issues" target="_blank" title="Open Issues" data-action="wrench">
+              <i class="fa fa-wrench"></i> Open Issues
               <span class="count">&ndash;</span>
             </a>
           </li>

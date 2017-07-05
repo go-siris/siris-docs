@@ -1,0 +1,11 @@
+- id: global.copyright
+  translation: "SIRIS是一个开源主动为高性能Golang的API与HTTP/2"
+
+- id: header.button.language
+  translation: "语言"
+
+- id: footer.button.prev
+  translation: "背部"
+
+- id: footer.button.next
+  translation: "更多"

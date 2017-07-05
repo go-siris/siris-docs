@@ -3,8 +3,13 @@
       var base_url = '{{ (printf "%s" $.Site.BaseURL) | safeJS }}';
       var repo_id  = '{{ . | safeJS }}';
     {{ else }}
-      var base_url = '';
-      var repo_id  = '';
+      {{ with .Page.Scratch.Get "repo_id" }}
+        var base_url = '{{ (printf "%s" $.Site.BaseURL) | safeJS }}';
+        var repo_id  = '{{ . | safeJS }}';
+      {{ else }}
+        var base_url = '';
+        var repo_id  = '';
+      {{ end }}
     {{ end }}
     </script>
 

@@ -19,6 +19,14 @@
     {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">
     {{ end }}
+    
+    {{ if .IsTranslated }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+    <link rel="alternate" hreflang="{{ $.Site.Language.Lang }}" href="{{ .Permalink }}">
+    {{ range .Translations }}{{ if ne .Language.Lang $.Site.Language.Lang }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    {{ end }}{{ end }}{{ end }}
+    
 
     <meta property="og:url" content="{{ .Permalink }}">
     {{ with .Site.Title }}<meta property="og:title" content="{{ . }}">{{ end }}
@@ -31,25 +39,23 @@
     <link rel="icon" type="image/x-icon" href="{{ with .Site.Params.favicon }}{{ . | absURL }}{{ else }}{{ "images/favicon.ico" | absURL }}{{ end }}">
 
     <style>
-      @font-face {
-        font-family: 'Icon';
-        src: url('{{ "fonts/icon.eot?52m981" | absURL }}');
-        src: url('{{ "fonts/icon.eot?#iefix52m981" | absURL }}')
-               format('embedded-opentype'),
-             url('{{ "fonts/icon.woff?52m981" | absURL }}')
-               format('woff'),
-             url('{{ "fonts/icon.ttf?52m981" | absURL }}')
-               format('truetype'),
-             url('{{ "fonts/icon.svg?52m981#icon" | absURL }}')
-               format('svg');
-        font-weight: normal;
-        font-style: normal;
+      @font-face{
+      font-family:'FontAwesome';
+      src:url('{{ "fonts/fontawesome-webfont.eot?v=4.7.0" | absURL }}');
+      src:url('{{ "fonts/fontawesome-webfont.eot?#iefix&v=4.7.0" | absURL }}') format('embedded-opentype'),
+        url('{{ "fonts/fontawesome-webfont.woff2?v=4.7.0" | absURL }}') format('woff2'),
+        url('{{ "fonts/fontawesome-webfont.woff?v=4.7.0" | absURL }}') format('woff'),
+        url('{{ "fonts/fontawesome-webfont.ttf?v=4.7.0" | absURL }}') format('truetype'),
+        url('{{ "fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular" | absURL }}') format('svg');
+        font-weight:normal;
+        font-style:normal;
       }
     </style>
 
     <link rel="stylesheet" href="{{ "stylesheets/application.css" | absURL }}">
     <link rel="stylesheet" href="{{ "stylesheets/temporary.css" | absURL }}">
     <link rel="stylesheet" href="{{ "stylesheets/palettes.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "stylesheets/font-awesome.min.css" | absURL }}">
     <link rel="stylesheet" href="{{ with .Site.Params.highlight_css }}{{ . | absURL }}{{ else }}{{ "stylesheets/highlight/highlight.css" | absURL }}{{ end }}">
 
     {{/* set default values if no custom ones are defined */}}

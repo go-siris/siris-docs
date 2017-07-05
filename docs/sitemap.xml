@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://www.go-siris.com/en/sitemap.xml</loc>
+		
+	   	<lastmod>2017-07-04T00:00:00+00:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://www.go-siris.com/de/sitemap.xml</loc>
+		
+	   	<lastmod>2017-07-04T00:00:00+00:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://www.go-siris.com/fr/sitemap.xml</loc>
+		
+	   	<lastmod>2017-07-04T00:00:00+00:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://www.go-siris.com/zh-cn/sitemap.xml</loc>
+		
+	   	<lastmod>2017-07-04T00:00:00+00:00</lastmod>
+		
+	</sitemap>
+	
+</sitemapindex>

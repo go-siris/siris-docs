@@ -1,12 +1,22 @@
-baseurl = "https://example.org/"
+baseurl = "https://www.go-siris.com/"
 languageCode = "en-us"
-DefaultContentLanguage = "en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+contentDir = "content"
+publishDir = "docs"
 title = "SIRIS Docs"
 theme = "siris-docs"
 metadataformat = "yaml"
 canonifyurls = true
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
 
 [params]
 	# General information
@@ -18,8 +28,8 @@ googleAnalytics = ""
 	provider = "GitHub"
 	repo_url = "https://github.com/go-siris/siris"
 
-  pkgTitle = "SIRIS"
-	version = "1.0.0"
+	pkgTitle = "SIRIS"
+	version = "7.3.4"
 	logo = "images/go-siris.png"
 	favicon = ""
 
@@ -43,109 +53,68 @@ googleAnalytics = ""
 
 [social]
 	twitter = ""
-	github  = "Dexus"
-	email   = "github@josef-froehle.de"
+	github  = "go-siris"
+	email   = "docs@go-siris.com"
 
 [Languages]
 [Languages.en]
 weight = 1
 LanguageName = "English"
-[Languages.en.blackfriday]
-angledQuotes = false
+languageCode = "en-us"
 
-[[Languages.en.menu.main]]
-url    = "/"
-name   = "SIRIS"
-weight = 1
+	[Languages.en.blackfriday]
+	angledQuotes = false
 
-[[Languages.en.menu.main]]
-url    = "/getting-started/"
-name   = "Getting started"
-weight = 10
-
-[[Languages.en.menu.main]]
-url    = "/adding-content/"
-name   = "Adding content"
-weight = 20
-
-[[Languages.en.menu.main]]
-url    = "/roadmap/"
-name   = "Roadmap"
-weight = 30
-
-[[Languages.en.menu.main]]
-url    = "/license/"
-name   = "License"
-weight = 40
-
-[Languages.fr]
-weight = 10
-LanguageName = "Français"
-languageCode = "fr-fr"
-
-[Languages.fr.Taxonomies]
-plaque = "plaques"
-
-[[Languages.fr.menu.main]]
-url    = "/"
-name   = "SIRIS"
-weight = 1
-
-[[Languages.fr.menu.main]]
-url    = "/getting-started/"
-name   = "Getting started"
-weight = 10
-
-[[Languages.fr.menu.main]]
-url    = "/adding-content/"
-name   = "Adding content"
-weight = 20
-
-[[Languages.fr.menu.main]]
-url    = "/roadmap/"
-name   = "Roadmap"
-weight = 30
-
-[[Languages.fr.menu.main]]
-url    = "/license/"
-name   = "License"
-weight = 40
+	[[Languages.en.menu.main]]
+	url    = "/"
+	name   = "SIRIS"
+	weight = 1
+	identifier = "siris-start"
 
 [Languages.de]
 weight = 5
 LanguageName = "Deutsch"
 languageCode = "de"
 
-[Languages.de.Taxonomies]
-plaque = "tags"
+[Languages.de.permalinks]
 
-[[Languages.de.menu.main]]
-url    = "/"
-name   = "SIRIS"
-weight = 1
+	[Languages.de.Taxonomies]
+	plaque = "tags"
 
-[[Languages.de.menu.main]]
-url    = "/anfangen/"
-name   = "Anfangen"
+	[[Languages.de.menu.main]]
+	url    = "/"
+	name   = "SIRIS"
+	weight = 1
+	identifier = "siris-start"
+
+[Languages.fr]
 weight = 10
+LanguageName = "Français"
+languageCode = "fr-fr"
 
-[[Languages.de.menu.main]]
-url    = "/inhalt-hinzufügen/"
-name   = "Inhalt hinzufügen"
-weight = 20
+[Languages.fr.permalinks]
 
-[[Languages.de.menu.main]]
-url    = "/fahrplan/"
-name   = "Fahrplan"
-weight = 30
+	[Languages.fr.Taxonomies]
+	plaque = "plaques"
 
-[[Languages.de.menu.main]]
-url    = "/lizenz/"
-name   = "Lizenz"
-weight = 40
+	[[Languages.fr.menu.main]]
+	url    = "/"
+	name   = "SIRIS"
+	weight = 1
+	identifier = "siris-start"
 
-[blackfriday]
-	smartypants	= true
-	fractions = true
-	smartDashes = true
-	plainIDAnchors = true
+[Languages.zh-cn]
+weight = 15
+LanguageName = "简体中文"
+languageCode = "zh-cn"
+
+[Languages.zh-cn.permalinks]
+
+	[Languages.zh-cn.Taxonomies]
+	plaque = "标签"
+
+	[[Languages.zh-cn.menu.main]]
+	url    = "/"
+	name   = "SIRIS"
+	weight = 1
+	identifier = "siris-start"
