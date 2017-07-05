@@ -2,7 +2,7 @@
   translation: "SIRIS ist eine OpenSource initiative für High-Performance Golang APIs mit HTTP/2"
 
 - id: header.button.language
-  translation: "Spache"
+  translation: "Sprache"
 
 - id: footer.button.prev
   translation: "Zurück"
